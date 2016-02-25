@@ -16,7 +16,7 @@ Don't need to worry about including CUDACopyTo or CUDACopyFrom in the pipeline; 
 | a        | yes      | name of the trained algorithm or pipeline of plugins | specify the trained algorithm file or pipeline to enroll; the pipeline can use key words |
 | b        | no       | relative path to 'br' executable | default path is "openbr/build/app/br/br" |
 | e        | no       | directory of images to enroll with | default database is "/data/ATT/img/" |
-| g        | no       | name of the outputted gallery file | default base name is enrolledGallery.gal; the image dimensions, type of algorithm, and number of copies used for enrolling get incorporated into the gallery name |
+| g        | no       | name of the outputted gallery file | default base name is enrolledGallery.gal; the image dimensions, type of algorithm, and number of copies used for enrolling get incorporated into the gallery name; final name follows convention: [name inputted]_[database image dimensions]_[CUDA/CPU type]_[number of copies for training]_[number of copies for enrolling].[extension] |
 | h        | no       |                    | help |
 | n        | yes      | comma separated sequence of numbers | specify the number of copies of the enrolling image directory to use; numbers need to be in increasing order |
 | o        | no       | output filename for timing data | default name is "timingEnroll.csv" |
